@@ -1,0 +1,27 @@
+{
+  "name": "AppIcons",
+  "version": "0.1.0",
+  "summary": "A short description of AppIcons.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rwbutler/AppIcons",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ross Butler": "github@rwbutler.com"
+  },
+  "source": {
+    "git": "https://github.com/rwbutler/AppIcons.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AppIcons/Classes/**/*",
+  "dependencies": {
+    "FlexibleRowHeightGridLayout": [
+
+    ]
+  }
+}

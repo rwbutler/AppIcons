@@ -1,0 +1,23 @@
+PODS:
+  - AppIcons (0.1.0):
+    - FlexibleRowHeightGridLayout
+  - FlexibleRowHeightGridLayout (1.3.1)
+
+DEPENDENCIES:
+  - AppIcons (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FlexibleRowHeightGridLayout
+
+EXTERNAL SOURCES:
+  AppIcons:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppIcons: 28418a4dfc71b516eb53a0a54cf223e8f7294f87
+  FlexibleRowHeightGridLayout: a38c211f3311dc1d0609be7a08e8fc579346c766
+
+PODFILE CHECKSUM: a2673d0ff9ddb775326a10d8565ebf0dce9410b1
+
+COCOAPODS: 1.8.3
