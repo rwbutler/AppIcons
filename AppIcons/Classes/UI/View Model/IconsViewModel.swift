@@ -18,7 +18,7 @@ class IconsViewModel: ViewModel {
     typealias Delegate = ViewControllerCompletionDelegate
     
     private weak var completionDelegate: Delegate?
-    private let iconsService = DefaultIconsService()
+    private let iconsService = Services.icons
     let title = "Customise Icon"
     
     init(completion: Delegate? = nil) {

@@ -14,6 +14,7 @@
 		1370514623AD165F00471066 /* AppIconsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513D23AD165F00471066 /* AppIconsViewControllerFactory.swift */; };
 		1370514723AD165F00471066 /* IconsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513F23AD165F00471066 /* IconsViewModel.swift */; };
 		1370514823AD165F00471066 /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370514023AD165F00471066 /* ViewModelConfigurable.swift */; };
+		1370514F23AD280700471066 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370514E23AD280700471066 /* Services.swift */; };
 		204F7FFE3F7D965A7CFCBBC2AC509D03 /* FlexibleRowHeightGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394604DF3ADD59F35129B65DBF510BF0 /* FlexibleRowHeightGridLayout.framework */; };
 		4011D7E6C8E57B3E3844878C8C2E8F12 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAFFC524ACABBEA8AA63FBAC2513CD /* Icon.swift */; };
 		527491639CD0EEC0ABC9D067B1550361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4109084861579FB63571B85CF1718A18 /* Foundation.framework */; };
@@ -81,6 +82,7 @@
 		1370513D23AD165F00471066 /* AppIconsViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconsViewControllerFactory.swift; sourceTree = "<group>"; };
 		1370513F23AD165F00471066 /* IconsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconsViewModel.swift; sourceTree = "<group>"; };
 		1370514023AD165F00471066 /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
+		1370514E23AD280700471066 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Services.swift; path = ../../../../../Services.swift; sourceTree = "<group>"; };
 		147FB358F4218E63A08EDF248DB47553 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14ECD39ABC5C0350CED9963B39AB1B8C /* Pods-AppIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		15F30681452C33CB3779D2848CF1F454 /* Pods-AppIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 		FBA8579B251107E9D6A0BDFEEE7285B4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1370514E23AD280700471066 /* Services.swift */,
 				E199B474CECDEFEAC289EC0DB6F54BC9 /* Implementation */,
 				35B6E73EFB48380F26ADCCAD821F846F /* Model */,
 				4DCD881E22621C1DE0F6DFA6B591784B /* Protocol */,
@@ -526,6 +529,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 550234D476B5D1FBA9D6942D3C7F98AD /* Products */;
@@ -586,6 +590,7 @@
 				AEF9BF208D48B089E1C78A7DA3BD45F5 /* Icons.swift in Sources */,
 				8CF1876DB9C505764292E269104C6A4E /* IconsService.swift in Sources */,
 				A5A5E83F3E7640A801F0ED4F0783A25D /* IconsServiceResult.swift in Sources */,
+				1370514F23AD280700471066 /* Services.swift in Sources */,
 				1370514623AD165F00471066 /* AppIconsViewControllerFactory.swift in Sources */,
 				1370514523AD165F00471066 /* ViewControllerFactory.swift in Sources */,
 				1370514723AD165F00471066 /* IconsViewModel.swift in Sources */,
@@ -798,7 +803,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.3.0;
 				MODULEMAP_FILE = "Target Support Files/AppIcons/AppIcons.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rwbutler.AppIcons;
 				PRODUCT_MODULE_NAME = AppIcons;
@@ -832,7 +837,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.3.0;
 				MODULEMAP_FILE = "Target Support Files/AppIcons/AppIcons.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rwbutler.AppIcons;
 				PRODUCT_MODULE_NAME = AppIcons;
