@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1370512E23AD0B3B00471066 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370512A23AD0B3B00471066 /* IconCell.swift */; };
-		1370512F23AD0B3B00471066 /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370512B23AD0B3B00471066 /* UIViewAdditions.swift */; };
-		1370513023AD0B3B00471066 /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370512D23AD0B3B00471066 /* ViewModelConfigurable.swift */; };
-		1370513423AD0DEB00471066 /* AppIconsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513323AD0DEB00471066 /* AppIconsViewControllerFactory.swift */; };
-		1370513623AD0E1000471066 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513523AD0E1000471066 /* ViewControllerFactory.swift */; };
+		1370514223AD165F00471066 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513823AD165F00471066 /* IconCell.swift */; };
+		1370514323AD165F00471066 /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513923AD165F00471066 /* UIViewAdditions.swift */; };
+		1370514423AD165F00471066 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513B23AD165F00471066 /* AppIconsViewController.swift */; };
+		1370514523AD165F00471066 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513C23AD165F00471066 /* ViewControllerFactory.swift */; };
+		1370514623AD165F00471066 /* AppIconsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513D23AD165F00471066 /* AppIconsViewControllerFactory.swift */; };
+		1370514723AD165F00471066 /* IconsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370513F23AD165F00471066 /* IconsViewModel.swift */; };
+		1370514823AD165F00471066 /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370514023AD165F00471066 /* ViewModelConfigurable.swift */; };
 		204F7FFE3F7D965A7CFCBBC2AC509D03 /* FlexibleRowHeightGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394604DF3ADD59F35129B65DBF510BF0 /* FlexibleRowHeightGridLayout.framework */; };
-		36D40EBBB0891FDC48D9E7AD22CC7C32 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ED8D6FA5A1EE613F8196C5BEEB0342 /* AppIconsViewController.swift */; };
 		4011D7E6C8E57B3E3844878C8C2E8F12 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAFFC524ACABBEA8AA63FBAC2513CD /* Icon.swift */; };
 		527491639CD0EEC0ABC9D067B1550361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4109084861579FB63571B85CF1718A18 /* Foundation.framework */; };
 		53011C1FD277EF7787F80A23593814D2 /* FlexibleRowHeightGridLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3507B7A1238C209E635AACCB35A1090F /* FlexibleRowHeightGridLayout-dummy.m */; };
@@ -27,7 +28,6 @@
 		9800739C8BE5E36F8CB9D2F8225FBD15 /* Pods-AppIcons_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 736A8B93B52A273E7F70F034005EC113 /* Pods-AppIcons_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F762ADA7C738064E718A1E539A9919D /* FlexibleRowHeightGridLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFC4248124C35BE2B27ED740A3529D1 /* FlexibleRowHeightGridLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A5E83F3E7640A801F0ED4F0783A25D /* IconsServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48297B24E01B335891CDE16EADF7BF03 /* IconsServiceResult.swift */; };
-		A6E35164C9E60BBB633870077D22B37F /* IconsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA49C5492C632267405EF2580B18019 /* IconsViewModel.swift */; };
 		AEF9BF208D48B089E1C78A7DA3BD45F5 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8790FB0A3095A46EF637F7325D29AE /* Icons.swift */; };
 		BB9FFD844E424BC38802AC4AB1FE2DDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4109084861579FB63571B85CF1718A18 /* Foundation.framework */; };
 		D5B9292178D6D169D13C4EAE5E8E8C67 /* AppIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328A8C79C1D0B1598FAE493D06ADC29 /* AppIcons.swift */; };
@@ -70,16 +70,17 @@
 
 /* Begin PBXFileReference section */
 		020C3852C2A2B436165FC54CAB5EC9A0 /* Pods-AppIcons_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppIcons_Tests.modulemap"; sourceTree = "<group>"; };
-		05ED8D6FA5A1EE613F8196C5BEEB0342 /* AppIconsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
 		074CA567D7A11FD4A273F98EDE72F7FB /* AppIcons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppIcons-dummy.m"; sourceTree = "<group>"; };
 		0D1CA17F70A06BC2ADAFBA186E45F06B /* FlexibleRowHeightGridLayoutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleRowHeightGridLayoutDelegate.swift; path = FlexibleRowHeightGridLayout/Classes/FlexibleRowHeightGridLayoutDelegate.swift; sourceTree = "<group>"; };
 		0DFC4248124C35BE2B27ED740A3529D1 /* FlexibleRowHeightGridLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleRowHeightGridLayout-umbrella.h"; sourceTree = "<group>"; };
 		106A80FC9C21A30335BC7EF667874335 /* Pods-AppIcons_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppIcons_Tests-Info.plist"; sourceTree = "<group>"; };
-		1370512A23AD0B3B00471066 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconCell.swift; path = ../IconCell.swift; sourceTree = "<group>"; };
-		1370512B23AD0B3B00471066 /* UIViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewAdditions.swift; path = ../UIViewAdditions.swift; sourceTree = "<group>"; };
-		1370512D23AD0B3B00471066 /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
-		1370513323AD0DEB00471066 /* AppIconsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewControllerFactory.swift; sourceTree = "<group>"; };
-		1370513523AD0E1000471066 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		1370513823AD165F00471066 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		1370513923AD165F00471066 /* UIViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
+		1370513B23AD165F00471066 /* AppIconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
+		1370513C23AD165F00471066 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		1370513D23AD165F00471066 /* AppIconsViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconsViewControllerFactory.swift; sourceTree = "<group>"; };
+		1370513F23AD165F00471066 /* IconsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconsViewModel.swift; sourceTree = "<group>"; };
+		1370514023AD165F00471066 /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
 		147FB358F4218E63A08EDF248DB47553 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14ECD39ABC5C0350CED9963B39AB1B8C /* Pods-AppIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		15F30681452C33CB3779D2848CF1F454 /* Pods-AppIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +123,6 @@
 		E0CAC48769AA90ABDA2C8E6A52D0AAB2 /* Pods-AppIcons_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppIcons_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EDABFFCE8EFFC68CA78B976B52D74086 /* FlexibleRowHeightGridLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleRowHeightGridLayout.swift; path = FlexibleRowHeightGridLayout/Classes/FlexibleRowHeightGridLayout.swift; sourceTree = "<group>"; };
 		F7FAFFC524ACABBEA8AA63FBAC2513CD /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
-		FFA49C5492C632267405EF2580B18019 /* IconsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IconsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,43 +172,43 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		1370512923AD0B3B00471066 /* UI */ = {
+		1370513723AD165F00471066 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1370513223AD0DD400471066 /* View Controller */,
-				1370513123AD0B5400471066 /* Views */,
-				1370512C23AD0B3B00471066 /* View Model */,
+				1370513823AD165F00471066 /* IconCell.swift */,
+				1370513923AD165F00471066 /* UIViewAdditions.swift */,
+				1370513A23AD165F00471066 /* View Controller */,
+				1370513E23AD165F00471066 /* View Model */,
+				1370514123AD165F00471066 /* Views */,
 			);
 			name = UI;
-			path = AppIcons/UI;
+			path = AppIcons/Classes/UI;
 			sourceTree = "<group>";
 		};
-		1370512C23AD0B3B00471066 /* View Model */ = {
+		1370513A23AD165F00471066 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FFA49C5492C632267405EF2580B18019 /* IconsViewModel.swift */,
-				1370512D23AD0B3B00471066 /* ViewModelConfigurable.swift */,
+				1370513B23AD165F00471066 /* AppIconsViewController.swift */,
+				1370513C23AD165F00471066 /* ViewControllerFactory.swift */,
+				1370513D23AD165F00471066 /* AppIconsViewControllerFactory.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		1370513E23AD165F00471066 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1370513F23AD165F00471066 /* IconsViewModel.swift */,
+				1370514023AD165F00471066 /* ViewModelConfigurable.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		1370513123AD0B5400471066 /* Views */ = {
+		1370514123AD165F00471066 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1370512A23AD0B3B00471066 /* IconCell.swift */,
-				1370512B23AD0B3B00471066 /* UIViewAdditions.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1370513223AD0DD400471066 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				05ED8D6FA5A1EE613F8196C5BEEB0342 /* AppIconsViewController.swift */,
-				1370513323AD0DEB00471066 /* AppIconsViewControllerFactory.swift */,
-				1370513523AD0E1000471066 /* ViewControllerFactory.swift */,
-			);
-			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		35B6E73EFB48380F26ADCCAD821F846F /* Model */ = {
@@ -276,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				FBA8579B251107E9D6A0BDFEEE7285B4 /* Services */,
-				1370512923AD0B3B00471066 /* UI */,
+				1370513723AD165F00471066 /* UI */,
 				A328A8C79C1D0B1598FAE493D06ADC29 /* AppIcons.swift */,
 				098769513EE32E427E39F2DE4DF2ED57 /* Pod */,
 				CCBE4CCB3938215FAD988F815E3EF50E /* Support Files */,
@@ -576,20 +576,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1370513423AD0DEB00471066 /* AppIconsViewControllerFactory.swift in Sources */,
-				1370513623AD0E1000471066 /* ViewControllerFactory.swift in Sources */,
 				EB52B7F1B3F7FD783613D85282C2E2A4 /* AppIcons-dummy.m in Sources */,
+				1370514423AD165F00471066 /* AppIconsViewController.swift in Sources */,
 				D5B9292178D6D169D13C4EAE5E8E8C67 /* AppIcons.swift in Sources */,
-				36D40EBBB0891FDC48D9E7AD22CC7C32 /* AppIconsViewController.swift in Sources */,
+				1370514223AD165F00471066 /* IconCell.swift in Sources */,
+				1370514323AD165F00471066 /* UIViewAdditions.swift in Sources */,
 				6F535E505EC5EC0A8E502575F9F89DC5 /* DefaultIconsService.swift in Sources */,
 				4011D7E6C8E57B3E3844878C8C2E8F12 /* Icon.swift in Sources */,
 				AEF9BF208D48B089E1C78A7DA3BD45F5 /* Icons.swift in Sources */,
-				1370512F23AD0B3B00471066 /* UIViewAdditions.swift in Sources */,
-				1370512E23AD0B3B00471066 /* IconCell.swift in Sources */,
 				8CF1876DB9C505764292E269104C6A4E /* IconsService.swift in Sources */,
 				A5A5E83F3E7640A801F0ED4F0783A25D /* IconsServiceResult.swift in Sources */,
-				A6E35164C9E60BBB633870077D22B37F /* IconsViewModel.swift in Sources */,
-				1370513023AD0B3B00471066 /* ViewModelConfigurable.swift in Sources */,
+				1370514623AD165F00471066 /* AppIconsViewControllerFactory.swift in Sources */,
+				1370514523AD165F00471066 /* ViewControllerFactory.swift in Sources */,
+				1370514723AD165F00471066 /* IconsViewModel.swift in Sources */,
+				1370514823AD165F00471066 /* ViewModelConfigurable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
