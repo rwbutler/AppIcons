@@ -12,9 +12,16 @@ let package = Package(
             targets: ["AppIcons"]
         )
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/rwbutler/FlexibleRowHeightGridLayout",
+            from: "1.3.1"
+        )
+    ],
     targets: [
         .target(
             name: "AppIcons",
+            dependencies: ["FlexibleRowHeightGridLayout"],
             path: "AppIcons/Classes"
         )
     ]
