@@ -10,6 +10,17 @@ import UIKit
 
 class IconCell: UICollectionViewCell {
     
+    var cornerRadius: CGFloat? {
+        didSet {
+            guard let imageView = self.imageView,
+                let cornerRadius = cornerRadius else {
+                return
+            }
+            imageView.clipsToBounds = true
+            imageView.layer.cornerRadius = cornerRadius
+        }
+    }
+    
     var iconName: String? {
         get {
             return iconLabel?.text
@@ -47,6 +58,10 @@ class IconCell: UICollectionViewCell {
                     contentView.pinVertically(imageView, vPadding: 10)
                 } else {
                     layoutImageWithLabel(hPadding: 0, vPadding: 10)
+                }
+                if let cornerRadius = cornerRadius {
+                    imageView.clipsToBounds = true
+                    imageView.layer.cornerRadius = cornerRadius
                 }
                 layoutIfNeeded()
                 return

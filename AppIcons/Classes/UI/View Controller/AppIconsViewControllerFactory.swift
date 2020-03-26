@@ -13,14 +13,16 @@ struct IconsViewControllerFactory: ViewControllerFactory {
     typealias Delegate = ViewControllerCompletionDelegate
     
     private weak var completionDelegate: Delegate?
+    private let configuration: AppIcons.Configuration?
     
-    init(completion: Delegate? = nil) {
+    init(configuration: AppIcons.Configuration? = nil, completion: Delegate? = nil) {
         self.completionDelegate = completion
+        self.configuration = configuration
     }
     
     func manufacture() -> UIViewController {
         let viewController = AppIconsViewController()
-        let viewModel = IconsViewModel(completion: completionDelegate)
+        let viewModel = IconsViewModel(configuration: configuration, completion: completionDelegate)
         viewController.configure(viewModel)
         return viewController
     }

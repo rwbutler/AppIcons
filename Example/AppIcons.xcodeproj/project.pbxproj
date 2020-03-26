@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13265274242CE003003FDA45 /* orange-purple-turquoise-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13265271242CE002003FDA45 /* orange-purple-turquoise-icon.png */; };
+		13265275242CE003003FDA45 /* purple-green-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13265272242CE003003FDA45 /* purple-green-icon.png */; };
+		13265276242CE003003FDA45 /* blue-pink-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13265273242CE003003FDA45 /* blue-pink-icon.png */; };
 		1F7A330F7790BA7E02911FF8 /* Pods_AppIcons_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50508982BD96249DB9B0E341 /* Pods_AppIcons_Tests.framework */; };
 		6047837768EB1FA19416345D /* Pods_AppIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA95428446C5C0E98D3BA87 /* Pods_AppIcons_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		08AE8334B35871A9B1D89F27 /* AppIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AppIcons.podspec; path = ../AppIcons.podspec; sourceTree = "<group>"; };
+		13265271242CE002003FDA45 /* orange-purple-turquoise-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange-purple-turquoise-icon.png"; sourceTree = "<group>"; };
+		13265272242CE003003FDA45 /* purple-green-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple-green-icon.png"; sourceTree = "<group>"; };
+		13265273242CE003003FDA45 /* blue-pink-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-pink-icon.png"; sourceTree = "<group>"; };
 		50508982BD96249DB9B0E341 /* Pods_AppIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576FCD30243F7DC3E55CB029 /* Pods-AppIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIcons_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppIcons_Tests/Pods-AppIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AppIcons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIcons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,9 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				13265273242CE003003FDA45 /* blue-pink-icon.png */,
+				13265271242CE002003FDA45 /* orange-purple-turquoise-icon.png */,
+				13265272242CE003003FDA45 /* purple-green-icon.png */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for AppIcons";
@@ -245,8 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13265274242CE003003FDA45 /* orange-purple-turquoise-icon.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				13265275242CE003003FDA45 /* purple-green-icon.png in Resources */,
+				13265276242CE003003FDA45 /* blue-pink-icon.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

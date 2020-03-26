@@ -19,17 +19,21 @@ class IconsViewModel: ViewModel {
     
     private weak var completionDelegate: Delegate?
     private let iconsService = Services.icons
+    let cornerRadius: CGFloat?
     let title = "Customise Icon"
     
-    init(completion: Delegate? = nil) {
+    init(configuration: AppIcons.Configuration? = nil, completion: Delegate? = nil) {
         self.completionDelegate = completion
+        self.cornerRadius = configuration?.cornerRadius
     }
     
     func icon(at indexPath: IndexPath) -> Icon? {
         guard let icons = iconsService.icons() else {
             return nil
         }
-        return icons.items[indexPath.item]
+        var icon = icons.items[indexPath.item]
+        icon.cornerRadius = cornerRadius
+        return icon
     }
     
     func iconsCount() -> Int {

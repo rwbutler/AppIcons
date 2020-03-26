@@ -10,15 +10,21 @@ import UIKit
 import AppIcons
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        present(AppIcons.viewController(), animated: true, completion: nil)
+        presentAppIcons()
     }
-
+    
+    @IBAction func presentAppIcons() {
+        let iconConfig = AppIcons.Configuration(cornerRadius: 5.0)
+        let iconsViewController = AppIcons.viewController(configuration: iconConfig)
+        present(iconsViewController, animated: true, completion: nil)
+    }
+    
 }
 

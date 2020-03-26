@@ -10,6 +10,7 @@ import UIKit
 
 struct Icon {
     
+    var cornerRadius: CGFloat?
     let iconName: String
     let fileName: String?
     let isPrimary: Bool

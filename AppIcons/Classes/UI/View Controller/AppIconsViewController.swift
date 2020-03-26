@@ -80,6 +80,7 @@ extension AppIconsViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         if let icon = _viewModel.icon(at: indexPath) {
+            cell.cornerRadius = icon.cornerRadius
             cell.iconName = icon.iconName
             cell.iconImage = icon.image
         }
