@@ -31,7 +31,7 @@
 		8CF1876DB9C505764292E269104C6A4E /* IconsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBAA792143032743009C2C517E6CB41 /* IconsService.swift */; };
 		9800739C8BE5E36F8CB9D2F8225FBD15 /* Pods-AppIcons_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 736A8B93B52A273E7F70F034005EC113 /* Pods-AppIcons_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F762ADA7C738064E718A1E539A9919D /* FlexibleRowHeightGridLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFC4248124C35BE2B27ED740A3529D1 /* FlexibleRowHeightGridLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5A5E83F3E7640A801F0ED4F0783A25D /* IconsServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48297B24E01B335891CDE16EADF7BF03 /* IconsServiceResult.swift */; };
+		A5A5E83F3E7640A801F0ED4F0783A25D /* PreferredIconResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48297B24E01B335891CDE16EADF7BF03 /* PreferredIconResult.swift */; };
 		AEF9BF208D48B089E1C78A7DA3BD45F5 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8790FB0A3095A46EF637F7325D29AE /* Icons.swift */; };
 		BB9FFD844E424BC38802AC4AB1FE2DDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4109084861579FB63571B85CF1718A18 /* Foundation.framework */; };
 		D5C0EBA1909D91EA1523BC763A98F14D /* FlexibleRowHeightGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABFFCE8EFFC68CA78B976B52D74086 /* FlexibleRowHeightGridLayout.swift */; };
@@ -99,7 +99,7 @@
 		4109084861579FB63571B85CF1718A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		429DB107690EC72A5A6A68EAFAAA7FF1 /* Pods-AppIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4678B7934E8C219953EA440C2067178F /* AppIcons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppIcons-prefix.pch"; sourceTree = "<group>"; };
-		48297B24E01B335891CDE16EADF7BF03 /* IconsServiceResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IconsServiceResult.swift; sourceTree = "<group>"; };
+		48297B24E01B335891CDE16EADF7BF03 /* PreferredIconResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferredIconResult.swift; sourceTree = "<group>"; };
 		4BD02AC7DB1CB7694ED5EF4A0E45145C /* Pods-AppIcons_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppIcons_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5151226BB6E42A2AF07DF133475EBFA3 /* FlexibleRowHeightGridLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexibleRowHeightGridLayout-Info.plist"; sourceTree = "<group>"; };
 		54F17EB0ABB41B3BAB06B14CBF83FBF5 /* Pods-AppIcons_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppIcons_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 			children = (
 				F7FAFFC524ACABBEA8AA63FBAC2513CD /* Icon.swift */,
 				8A8790FB0A3095A46EF637F7325D29AE /* Icons.swift */,
-				48297B24E01B335891CDE16EADF7BF03 /* IconsServiceResult.swift */,
+				48297B24E01B335891CDE16EADF7BF03 /* PreferredIconResult.swift */,
 				13265281243D06AA003FDA45 /* InfoPlistKeys.swift */,
 			);
 			path = Model;
@@ -604,7 +604,7 @@
 				AEF9BF208D48B089E1C78A7DA3BD45F5 /* Icons.swift in Sources */,
 				13265287243D0B09003FDA45 /* AppIcons.swift in Sources */,
 				8CF1876DB9C505764292E269104C6A4E /* IconsService.swift in Sources */,
-				A5A5E83F3E7640A801F0ED4F0783A25D /* IconsServiceResult.swift in Sources */,
+				A5A5E83F3E7640A801F0ED4F0783A25D /* PreferredIconResult.swift in Sources */,
 				13265270242C20A0003FDA45 /* Services.swift in Sources */,
 				13265286243D0B09003FDA45 /* AppIconsConfiguration.swift in Sources */,
 				1370514623AD165F00471066 /* AppIconsViewControllerFactory.swift in Sources */,

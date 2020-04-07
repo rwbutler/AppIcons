@@ -7,4 +7,4 @@
 
 import Foundation
 
-typealias IconsServiceResult = Result<Bool, Error>
+public typealias PreferredIconResult = Result<Bool, Error>

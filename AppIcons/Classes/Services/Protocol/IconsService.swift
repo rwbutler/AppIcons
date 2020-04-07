@@ -8,7 +8,7 @@
 import Foundation
 
 protocol IconsService {
-    func icons(primaryIconName: String) -> Icons?
+    func icons(primaryIconName: String, primaryIconFileName: String?) -> Icons?
     func isAvailable() -> Bool
-    func setPreferredIcon(_ icon: Icon, completion: ((IconsServiceResult) -> Void)?)
+    func setPreferredIcon(_ icon: Icon, completion: ((PreferredIconResult) -> Void)?)
 }

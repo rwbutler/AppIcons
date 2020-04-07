@@ -10,9 +10,7 @@ import UIKit
 
 class DefaultIconsService: IconsService {
     
-    private var primaryIconFileName: String? = "blue-pink-icon"
-    
-    func icons(primaryIconName: String) -> Icons? {
+    func icons(primaryIconName: String, primaryIconFileName: String?) -> Icons? {
         let bundle = Bundle.main
         let fileManager = FileManager.default
         guard isAvailable(),
@@ -20,9 +18,7 @@ class DefaultIconsService: IconsService {
             let altIconEntries = icons[InfoPlistKeys.alternate] as? [String: [String: [String]]] else {
                 return nil
         }
-        let primaryIconDict = icons[InfoPlistKeys.primary] as? [String: Any]
-        let primaryIcons = primaryIconDict?[InfoPlistKeys.files] as? [String]
-        let primaryIconFileName = self.primaryIconFileName ?? primaryIcons?.last
+        let primaryIconFileName = resolvePrimaryIconFileName(primaryIconFileName)
         let primaryIcon = Icon(iconName: primaryIconName, fileName: primaryIconFileName, isPrimary: true)
         var altIcons: [Icon] = altIconEntries.compactMap { entry in
             let iconName = entry.key
@@ -51,7 +47,17 @@ class DefaultIconsService: IconsService {
         }
     }
     
-    func setPreferredIcon(_ icon: Icon, completion: ((IconsServiceResult) -> Void)?) {
+    /// Resolves to the provided file name if non-nil, otherwise attempts to locate entry in app's info dictionary.
+    func resolvePrimaryIconFileName(_ primaryIconFileName: String?) -> String? {
+        guard let icons = Bundle.main.object(forInfoDictionaryKey: InfoPlistKeys.icons) as? [String: Any],
+            let primaryIconDict = icons[InfoPlistKeys.primary] as? [String: Any],
+            let primaryIcons = primaryIconDict[InfoPlistKeys.files] as? [String] else {
+                return primaryIconFileName
+        }
+        return primaryIconFileName ?? primaryIcons.last
+    }
+    
+    func setPreferredIcon(_ icon: Icon, completion: ((PreferredIconResult) -> Void)?) {
         let iconName: String? = (icon.isPrimary) ? nil : icon.iconName
         if #available(iOS 10.3, *) {
             UIApplication.shared.setAlternateIconName(iconName) { error in

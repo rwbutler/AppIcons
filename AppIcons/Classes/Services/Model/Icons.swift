@@ -7,10 +7,15 @@
 
 import Foundation
 
-struct Icons {
-    let items: [Icon]
+public struct Icons {
+    public var all: [Icon] {
+        [primaryIcon] + alternateIcons
+    }
+    public let alternateIcons: [Icon]
+    public let primaryIcon: Icon
     
     init(primaryIcon: Icon, alternateIcons: [Icon]) {
-        self.items = [primaryIcon] + alternateIcons
+        self.primaryIcon = primaryIcon
+        self.alternateIcons = alternateIcons
     }
 }

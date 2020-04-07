@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-struct Icon {
+public struct Icon {
     
     var cornerRadius: CGFloat?
-    let iconName: String
-    let fileName: String?
-    let isPrimary: Bool
+    public let iconName: String
+    public let fileName: String?
+    public let isPrimary: Bool
     
     init(iconName: String, fileName: String?, isPrimary: Bool = false) {
         self.iconName = iconName

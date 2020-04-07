@@ -20,29 +20,31 @@ class IconsViewModel: ViewModel {
     private weak var completionDelegate: Delegate?
     private let iconsService = Services.icons
     let cornerRadius: CGFloat?
-    let primaryIconName: String
+    private let primaryIconName: String
+    private let primaryIconFileName: String?
     let title = "Customise Icon"
     
     init(configuration: AppIcons.Configuration, completion: Delegate? = nil) {
         self.completionDelegate = completion
         self.cornerRadius = configuration.cornerRadius
         self.primaryIconName = configuration.primaryIconName
+        self.primaryIconFileName = configuration.primaryIconFileName
     }
     
     func icon(at indexPath: IndexPath) -> Icon? {
-        guard let icons = iconsService.icons(primaryIconName: primaryIconName) else {
+        guard let icons = iconsService.icons(primaryIconName: primaryIconName, primaryIconFileName: primaryIconFileName) else {
             return nil
         }
-        var icon = icons.items[indexPath.item]
+        var icon = icons.all[indexPath.item]
         icon.cornerRadius = cornerRadius
         return icon
     }
     
     func iconsCount() -> Int {
-        guard let icons = iconsService.icons(primaryIconName: primaryIconName) else {
+        guard let icons = iconsService.icons(primaryIconName: primaryIconName, primaryIconFileName: primaryIconFileName) else {
             return 0
         }
-        return icons.items.count
+        return icons.all.count
     }
     
     func selectIcon(at indexPath: IndexPath) {

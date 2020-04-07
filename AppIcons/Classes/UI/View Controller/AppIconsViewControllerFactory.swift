@@ -15,9 +15,9 @@ struct IconsViewControllerFactory: ViewControllerFactory {
     private weak var completionDelegate: Delegate?
     private let configuration: AppIcons.Configuration
     
-    init(configuration: AppIcons.Configuration? = nil, completion: Delegate? = nil) {
+    init(configuration: AppIcons.Configuration, completion: Delegate? = nil) {
         self.completionDelegate = completion
-        self.configuration = configuration ?? AppIcons.Configuration()
+        self.configuration = configuration
     }
     
     func manufacture() -> UIViewController {
