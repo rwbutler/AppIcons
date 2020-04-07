@@ -10,28 +10,23 @@ import UIKit
 
 class DefaultIconsService: IconsService {
     
-    private var primaryIconName = "Default"
     private var primaryIconFileName: String? = "blue-pink-icon"
     
-    func icons() -> Icons? {
+    func icons(primaryIconName: String) -> Icons? {
         let bundle = Bundle.main
         let fileManager = FileManager.default
-        let iconsKey = "CFBundleIcons"
-        let iconFilesKey = "CFBundleIconFiles"
-        let primaryIconKey = "CFBundlePrimaryIcon"
-        let altIconsKey = "CFBundleAlternateIcons"
         guard isAvailable(),
-            let icons = bundle.object(forInfoDictionaryKey: iconsKey) as? [String: Any],
-            let altIconEntries = icons[altIconsKey] as? [String: [String: [String]]] else {
+            let icons = bundle.object(forInfoDictionaryKey: InfoPlistKeys.icons) as? [String: Any],
+            let altIconEntries = icons[InfoPlistKeys.alternate] as? [String: [String: [String]]] else {
                 return nil
         }
-        let primaryIconDict = icons[primaryIconKey] as? [String: Any]
-        let primaryIcons = primaryIconDict?[iconFilesKey] as? [String]
+        let primaryIconDict = icons[InfoPlistKeys.primary] as? [String: Any]
+        let primaryIcons = primaryIconDict?[InfoPlistKeys.files] as? [String]
         let primaryIconFileName = self.primaryIconFileName ?? primaryIcons?.last
         let primaryIcon = Icon(iconName: primaryIconName, fileName: primaryIconFileName, isPrimary: true)
         var altIcons: [Icon] = altIconEntries.compactMap { entry in
             let iconName = entry.key
-            guard let fileName = entry.value[iconFilesKey]?.first else {
+            guard let fileName = entry.value[InfoPlistKeys.files]?.first else {
                 return nil
             }
             return Icon(iconName: iconName, fileName: fileName)
@@ -67,10 +62,6 @@ class DefaultIconsService: IconsService {
                 }
             }
         }
-    }
-    
-    func setPrimaryIconName(_ name: String) {
-        self.primaryIconName = name
     }
     
 }

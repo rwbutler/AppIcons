@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentAppIcons() {
-        let iconConfig = AppIcons.Configuration(cornerRadius: 5.0)
+        let iconConfig = AppIcons.Configuration(cornerRadius: 5.0, primaryIconName: "Pink")
         let iconsViewController = AppIcons.viewController(configuration: iconConfig)
         present(iconsViewController, animated: true, completion: nil)
     }
