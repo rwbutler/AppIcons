@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AppIcons'
-  s.version          = '0.5.0'
+  s.version          = '0.5.1'
   s.swift_version    = '5.0'
   s.summary          = 'Provides support for alternate app icons with UI for icon selection'
   s.description      = <<-DESC
